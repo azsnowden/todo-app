@@ -9,4 +9,5 @@ const db = pgp({
 });
 
 console.log("thing just happened")
-console.log(db)
+
+module.exports = db;
