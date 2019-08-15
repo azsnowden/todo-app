@@ -1,6 +1,9 @@
 require('dotenv').config();
 
-const pgp = require('pg-promise')();
+const pgp = require('pg-promise')({
+    //logs sql query to console
+    query:(e) => console.log(e.query)
+});
 
 const db = pgp({
     host: process.env.DB_HOST,
