@@ -20,3 +20,5 @@ values
 ;
 
 select * from users;
+
+select * from todos;

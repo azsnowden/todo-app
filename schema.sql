@@ -1,7 +1,7 @@
 create table users(
     id serial primary key,
-    displayname varchar(20) not null,
-    username varchar(50) not null
+    displayname varchar(200) not null,
+    username varchar(200) not null
 );
 
 create table todos(
